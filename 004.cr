@@ -1,10 +1,7 @@
+# solved
+# 004- Largest palindrome product
 # A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
 # Find the largest palindrome made from the product of two 3-digit numbers.
-
-# 99*99 = 75*130 = 50*196
-# 99*75 = 75*99  = 50*148
-# 99*50 = 75*66  = 50*99
-# 99*25 = 75*33  = 50*49
 
 def palprod
   pal_ary = Array(Int32).new
@@ -16,7 +13,10 @@ def palprod
       end
     end
   end
-  puts pal_ary.max
+  pal_ary.max
 end
 
-palprod
+puts palprod
+
+# elapsed = Time.measure { 32.times { palprod } }
+# puts "32X ran in #{elapsed.total_seconds} seconds."
